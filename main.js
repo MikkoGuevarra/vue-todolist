@@ -8,8 +8,10 @@ var app = new Vue({
     },
     methods : {
         addToDo() {
-            this.lists.push(this.inserted);
-            console.log('clicked');
+            if (this.inserted != "") {
+                this.lists.push(this.inserted);
+                console.log('clicked');
+            }
         },
         removeToDo(index) {
             this.lists.splice(index, 1);
