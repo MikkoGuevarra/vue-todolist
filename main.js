@@ -15,6 +15,9 @@ var app = new Vue({
         },
         removeToDo(index) {
             this.lists.splice(index, 1);
+        },
+        resetForm() {
+            this.inserted = "";
         }
     }
 });
