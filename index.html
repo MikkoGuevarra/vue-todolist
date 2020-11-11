@@ -10,6 +10,8 @@
     <body>
         <div id="root" class="container">
             <h1>{{title}}</h1>
+            <input type="text" v-model="inserted">
+            <button @click= "addToDo()" type="button" name="button">enter</button>
             <div class="list">
                 <ul>
                     <li v-for="list in lists">{{list}}</li>
