@@ -16,3 +16,8 @@ h1 {
 .list ul {
     list-style: none;
 }
+
+.list ul li {
+    cursor: pointer;
+    padding: 5px 0;
+}

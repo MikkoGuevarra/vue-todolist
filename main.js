@@ -1,14 +1,18 @@
 var app = new Vue({
     el : '#root',
     data: {
-        indexList: 0,
+        index: 0,
         title: 'List-to-do',
         lists : ['wake-up', 'teorical boolean', 'lunch', 'practical boolean', 'sleep', 'repeat'],
         inserted: ""
     },
     methods : {
         addToDo() {
-            this.lists.push(this.inserted)
+            this.lists.push(this.inserted);
+            console.log('clicked');
+        },
+        removeToDo(index) {
+            this.lists.splice(index, 1);
         }
     }
 });
