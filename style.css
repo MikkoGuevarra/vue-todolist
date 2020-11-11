@@ -7,21 +7,47 @@
 .container {
     max-width: 1170px;
     margin: 0 auto;
+    height: 100vh;
 }
 
 h1 {
     margin-bottom: 20px;
+    text-align: center;
 }
 
+.list {
+    margin-top: 20px;
+}
 .list ul {
     list-style: none;
 }
 
 .list ul li {
     cursor: pointer;
-    padding: 5px 0;
+    padding: 10px 10px;
+    border: 2px solid black;
+    margin: 5px 0;
+    width: 30%;
+    border-radius: 5px;
 }
 
 .fa-check-circle {
     margin-right: 5px;
+}
+
+.container input, .container button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container input {
+    width: 70%;
+}
+
+.container button {
+    width: 28%;
+}
+
+.input-cont {
+    width: 30%;
 }

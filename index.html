@@ -10,13 +10,16 @@
     </head>
     <body>
         <div id="root" class="container">
-            <h1>{{title}}</h1>
-            <input type="text" v-model="inserted" @keyup.enter="addToDo(); resetForm();" placeholder="Add things to do" required>
-            <button @click= "addToDo(); resetForm();" type="button" name="button">enter</button>
+            <div class="input-cont">
+                <h1>{{title}}</h1>
+                <input type="text" v-model="inserted" @keyup.enter="addToDo(); resetForm();" placeholder="Add things to do" required>
+                <button @click= "addToDo(); resetForm();" type="button" name="button">Enter</button>
+            </div>
             <div class="list">
                 <ul>
                     <li v-for="(list, i) in lists"
-                        @click="removeToDo(i)"><i class="fas fa-check-circle"></i>{{list}}</li>
+                        @click="removeToDo(i)"><i class="fas fa-check-circle"
+                        ></i>{{list}}</li>
                 </ul>
             </div>
 
