@@ -11,7 +11,7 @@
     <body>
         <div id="root" class="container">
             <h1>{{title}}</h1>
-            <input type="text" v-model="inserted" required>
+            <input type="text" v-model="inserted" @keyup.enter="addToDo()" required>
             <button @click= "addToDo()" type="button" name="button">enter</button>
             <div class="list">
                 <ul>
